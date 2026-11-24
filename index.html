@@ -1,0 +1,758 @@
+
+<!DOCTYPE html>
+
+<html data-theme="dark" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="images/favicon.png" rel="icon" type="image/png"/>
+<link href="images/favicon.png" rel="apple-touch-icon"/>
+<title>Hisra Khan — Full-Stack Developer</title>
+<meta content="Hisra Khan — Full-stack developer building web applications and cross-platform apps with Flutter, ASP.NET Core MVC, React, PHP and SQL Server." name="description"/>
+<meta content="dark light" name="color-scheme"/>
+<meta content="#0A0D10" id="metaTheme" name="theme-color"/>
+<script>(function(){var d=document.documentElement;try{d.setAttribute("data-theme",localStorage.getItem("hk_theme")==="light"?"light":"dark")}catch(e){d.setAttribute("data-theme","dark")}try{if(localStorage.getItem("hk_lang")==="ur"){d.lang="ur";d.dir="rtl"}}catch(e){}})();</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Background -->
+<div aria-hidden="true" class="grid-backdrop">
+<div class="grid-lines"></div>
+<div class="grid-glow glow-1"></div>
+<div class="grid-glow glow-2"></div>
+<span class="fbox fb1"></span>
+<span class="fbox fb2 teal"></span>
+<span class="fbox fb3 solid"></span>
+<span class="fbox fb4 ring"></span>
+<span class="fbox fb5"></span>
+<span class="fbox fb6 teal ring"></span>
+<span class="fbox fb7 solid"></span>
+<span class="fbox fb8 teal"></span>
+</div>
+<div aria-hidden="true" class="cursor-glow" id="cursorGlow"></div>
+<script>
+    if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      document.documentElement.classList.add('reduced-motion');
+    }
+  </script>
+<!-- NAVBAR -->
+<header class="nav">
+<div class="nav-inner">
+<a class="nav-mark" href="#top">
+<span class="mark-glyph has-logo"><img alt="HK logo" height="240" src="images/hk-logo.png" width="520"/></span>
+<span class="mark-name">Hisra Khan</span>
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a data-i18n="1" href="#about">About</a></li>
+<li><a data-i18n="2" href="#resume">Resume</a></li><li><a data-i18n="148" href="#internship">Internship</a></li>
+<li><a data-i18n="3" href="#skills">Stack</a></li>
+<li><a data-i18n="4" href="#work">Projects</a></li>
+<li><a data-i18n="5" href="#services">Services</a></li>
+<li><a data-i18n="6" href="#contact">Contact</a></li>
+</ul>
+<div class="nav-right">
+<div class="nav-tools">
+<button aria-label="Switch language" class="tool-btn lang-btn" id="langToggle" title="English / اردو" type="button"><span id="langLabel">اردو</span></button>
+<button aria-label="Switch theme" class="tool-btn theme-btn" id="themeToggle" title="Dark / Light" type="button">
+<svg aria-hidden="true" class="i-sun" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+<svg aria-hidden="true" class="i-moon" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+</button>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="tool-btn menu-btn" id="menuToggle" type="button"><svg aria-hidden="true" class="i-burger" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg aria-hidden="true" class="i-close" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="18"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<a class="nav-cta" data-i18n="7" href="#contact">Let's Talk</a>
+</div>
+</div>
+<div class="nav-progress" id="navProgress"></div>
+</header>
+<main id="top">
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="wrap">
+<div class="hero-main">
+<!-- Hero Text -->
+<div class="hero-copy">
+<div class="identity-row reveal">
+<div class="avatar-mark has-logo"><img alt="HK logo" height="240" src="images/hk-logo.png" width="520"/></div>
+<div class="identity-text">
+<span class="identity-name">Hisra Khan</span>
+<span class="identity-role" data-i18n="8">Full-Stack Developer</span>
+</div>
+</div>
+<div class="badge-pill reveal">
+<span class="status-dot"></span>
+<span data-i18n="9">Open to Internships &amp; Freelance · Karachi, Pakistan</span>
+</div>
+<h1 class="reveal" data-i18n="10">
+              I build software people can actually
+              <span class="text-accent">rely on.</span>
+</h1>
+<p class="lead reveal" data-i18n="11">
+              Hi, I'm Hisra Khan — a full-stack developer who takes projects
+              from database schema to a polished, working interface. I build
+              role-based platforms, cross-platform apps, and data-driven
+              systems with Flutter, ASP.NET Core MVC, PHP, React, and SQL Server.
+            </p>
+<div class="hero-actions reveal">
+<a class="btn-primary" data-i18n="12" href="#work">
+                Explore Featured Projects
+                <span class="arrow">→</span>
+</a>
+<a class="btn-ghost btn-cv" data-i18n="13" download="" href="Hisra_Khan_CV.pdf">
+<span class="dl-icon">↓</span> Download CV
+              </a>
+</div>
+</div>
+<!-- Profile Portrait -->
+<div class="hero-photo">
+<span class="float-chip fc-1">Flutter</span>
+<span class="float-chip fc-2">PHP</span>
+<span class="float-chip fc-3">ASP.NET</span>
+<span class="float-chip fc-4">React</span>
+<div class="photo-ring">
+<span aria-hidden="true" class="ring-spin"></span>
+<div class="photo-frame">
+<img alt="Hisra Khan — Full-Stack Developer" data-i18n-alt="144" fetchpriority="high" height="1280" src="hisrak.jpeg" width="960"/>
+</div>
+<span class="corner c-tl"></span><span class="corner c-br"></span>
+</div>
+<div class="photo-caption">
+<span class="status-dot"></span>
+<span data-i18n="14">Open to work</span>
+</div>
+</div>
+</div>
+<!-- Three-Layer Architecture -->
+<div class="layer-row reveal-stagger">
+<div class="layer-card">
+<span class="layer-kicker" data-i18n="15">Interface Layer</span>
+<h3 data-i18n="16">Frontend Systems</h3>
+<p data-i18n="17">
+              Building responsive interfaces with React, Material UI,
+              Bootstrap 5, and modern JavaScript.
+            </p>
+</div>
+<div class="layer-card">
+<span class="layer-kicker" data-i18n="18">Business Logic</span>
+<h3 data-i18n="19">Backend Core</h3>
+<p data-i18n="20">
+              Building controllers, authentication, role-based access,
+              and business logic with ASP.NET Core MVC and PHP.
+            </p>
+</div>
+<div class="layer-card">
+<span class="layer-kicker" data-i18n="21">Data Layer</span>
+<h3 data-i18n="22">Database Engineering</h3>
+<p data-i18n="23">
+              Designing relational models and data access with SQL Server,
+              MySQL, EF Core, and Firebase.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- STATS + TECH MARQUEE -->
+<section class="strip">
+<div class="wrap">
+<div class="stats-row reveal-stagger">
+<div class="stat"><span class="stat-num" data-count="13" data-suffix="">0</span><span class="stat-label" data-i18n="24">Projects Built</span></div>
+<div class="stat"><span class="stat-num" data-count="4" data-suffix="">0</span><span class="stat-label" data-i18n="25">Core Stacks</span></div>
+<div class="stat"><span class="stat-num" data-count="30" data-suffix="+">0</span><span class="stat-label" data-i18n="26">Technologies</span></div>
+<div class="stat"><span class="stat-num" data-count="4" data-suffix="">0</span><span class="stat-label" data-i18n="27">Databases</span></div>
+</div>
+</div>
+<div aria-hidden="true" class="marquee">
+<div class="marquee-track"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Flutter</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dart.svg" width="16"/>Dart</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/firebase.svg" width="16"/>Firebase</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/php.svg" width="16"/>PHP</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mysql.svg" width="16"/>MySQL</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>ASP.NET Core MVC</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/csharp.svg" width="16"/>C#</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mssql.svg" width="16"/>SQL Server</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>EF Core</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/react.svg" width="16"/>React</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/nodejs.svg" width="16"/>Node.js</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mongodb.svg" width="16"/>MongoDB</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/materialui.svg" width="16"/>Material UI</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/tailwindcss.svg" width="16"/>Tailwind CSS</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/chartjs.svg" width="16"/>Chart.js</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Flutter</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dart.svg" width="16"/>Dart</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/firebase.svg" width="16"/>Firebase</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/php.svg" width="16"/>PHP</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mysql.svg" width="16"/>MySQL</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>ASP.NET Core MVC</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/csharp.svg" width="16"/>C#</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mssql.svg" width="16"/>SQL Server</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>EF Core</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/react.svg" width="16"/>React</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/nodejs.svg" width="16"/>Node.js</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mongodb.svg" width="16"/>MongoDB</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/materialui.svg" width="16"/>Material UI</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/tailwindcss.svg" width="16"/>Tailwind CSS</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/chartjs.svg" width="16"/>Chart.js</span></div>
+</div>
+</section>
+<!-- ABOUT -->
+<section id="about">
+<div class="wrap about-grid">
+<div class="about-text reveal">
+<span class="section-eyebrow" data-i18n="28">01 — About</span>
+<h2 data-i18n="29">I build things end-to-end, not just pieces of them.</h2>
+<p data-i18n="30">
+            I'm a <strong>Software Engineering (ADSE) student at
+            Aptech Learning</strong>, based in Karachi. I build full-stack
+            applications from database schema to a finished, responsive
+            interface.
+          </p>
+<p data-i18n="31">
+            I work with <strong>Flutter for mobile</strong>,
+            <strong>ASP.NET Core MVC and PHP for backend platforms</strong>,
+            and <strong>React with Material UI</strong> on the frontend.
+          </p>
+<p data-i18n="32"> My projects include a Flutter fintech app, an electrical laboratory management system, a theme park booking platform, a MERN crime-monitoring portal, and responsive e-commerce, food-saving and landing-page websites. I also have two internships: Agentic AI at NEXLEVR (AI agents with Python and Gemini) and Web Development &amp; Designing at Oasis Infobyte. I focus on clear communication, maintainable code, and useful interfaces. </p>
+</div>
+<div class="fact-card reveal">
+<ul class="fact-list">
+<li>
+<span class="label" data-i18n="33">Location</span>
+<span class="value" data-i18n="34">Karachi, Pakistan</span>
+</li>
+<li>
+<span class="label" data-i18n="35">Education</span>
+<span class="value" data-i18n="36">Software Engineering (ADSE)</span>
+</li>
+<li>
+<span class="label" data-i18n="37">Institution</span>
+<span class="value" data-i18n="38">Aptech Learning</span>
+</li>
+<li>
+<span class="label" data-i18n="39">Focus</span>
+<span class="value" data-i18n="40">Full-Stack &amp; Cross-Platform</span>
+</li>
+<li><span class="label" data-i18n="149">Internship</span><span class="value" data-i18n="150">NEXLEVR · Oasis Infobyte</span></li><li>
+<span class="label" data-i18n="41">Availability</span>
+<span class="value" data-i18n="42">Internships &amp; Freelance</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- RESUME -->
+<section id="resume">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="section-eyebrow" data-i18n="43">02 — Resume</span>
+<h2 data-i18n="44">My CV at a glance</h2>
+<p data-i18n="45">Education, focus areas and what I've shipped — download the full PDF anytime.</p>
+</div>
+<div class="resume-grid">
+<div class="resume-main reveal">
+<h3 class="resume-title" data-i18n="46">Summary</h3>
+<p class="resume-summary" data-i18n="47">Software developer working across web, mobile and AI — Flutter and Firebase on mobile, PHP/MySQL, ASP.NET Core MVC and Node.js/MongoDB on the backend, and React with Material UI on the front end. I build complete systems with real databases, admin panels and role-based access, not just interfaces. Internships in Agentic AI (NEXLEVR) and Web Development (Oasis Infobyte), and currently completing an ADSE (Software Engineering) diploma at Aptech.</p>
+<h3 class="resume-title" data-i18n="151">Experience</h3><ul class="timeline"><li class="tl-item"><span class="tl-dot"></span><img alt="NEXLEVR logo" class="tl-logo" height="40" loading="lazy" src="images/nexlevr-logo.png" width="40"/><div><strong data-i18n="152">Agentic AI Developer Intern — NEXLEVR</strong><span class="tl-meta" data-i18n="153">Internship · Remote · Dec 2026</span></div></li><li class="tl-item"><span class="tl-dot"></span><img alt="Oasis logo" class="tl-logo" height="40" loading="lazy" src="images/oasis-logo.png" width="40"/><div><strong data-i18n="228">Web Development &amp; Designing Intern — Oasis Infobyte</strong><span class="tl-meta" data-i18n="229">Internship · Nov 2026 · 1 month · Level 1 completed</span></div></li></ul><h3 class="resume-title" data-i18n="48">Education</h3>
+<ul class="timeline">
+<li class="tl-item">
+<span class="tl-dot"></span>
+<img alt="Aptech Learning logo" class="tl-logo edu wide" height="120" loading="lazy" src="images/aptech-logo.png" width="260"/><div>
+<strong data-i18n="49">ADSE — Advanced Diploma in Software Engineering</strong>
+<span class="tl-meta" data-i18n="50">Aptech · In progress</span>
+</div>
+</li>
+<li class="tl-item">
+<span class="tl-dot"></span>
+<img alt="Board of Intermediate Education Karachi logo" class="tl-logo edu" height="200" loading="lazy" src="images/inter-board-logo.png" width="200"/><div>
+<strong data-i18n="51">Intermediate — Commerce</strong>
+<span class="tl-meta" data-i18n="52">Completed</span>
+</div>
+</li>
+<li class="tl-item">
+<span class="tl-dot"></span>
+<img alt="School logo" class="tl-logo edu cover" height="200" loading="lazy" src="images/js-school-logo.png" width="200"/><div>
+<strong data-i18n="53">Matriculation — Science</strong>
+<span class="tl-meta" data-i18n="54">Completed</span>
+</div>
+</li>
+</ul>
+</div>
+<aside class="cv-card reveal">
+<div aria-hidden="true" class="cv-doc">
+<span class="cv-line w60"></span>
+<span class="cv-line w40 amber"></span>
+<span class="cv-line"></span>
+<span class="cv-line w80"></span>
+<span class="cv-line w70"></span>
+<span class="cv-line w50"></span>
+<span class="cv-badge">PDF</span>
+</div>
+<h3>Hisra_Khan_CV.pdf</h3>
+<p data-i18n="55">Software Developer · Karachi, Pakistan</p>
+<div class="cv-actions">
+<a class="btn-primary" data-i18n="56" download="" href="Hisra_Khan_CV.pdf">Download CV <span class="arrow">↓</span></a>
+<a class="btn-ghost" data-i18n="57" href="Hisra_Khan_CV.pdf" rel="noopener noreferrer" target="_blank">View Online</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section id="internship">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="section-eyebrow" data-i18n="154">03 — Internship</span>
+<h2 data-i18n="155">Internship Experience</h2>
+<p data-i18n="156">Hands-on experience across AI agents, automation workflows and web development.</p>
+</div>
+<div class="intern-card reveal nex">
+<div class="intern-head">
+<div class="intern-logo has-img nex"><img alt="NEXLEVR logo" height="200" loading="lazy" src="images/nexlevr-logo.png" width="200"/></div>
+<div class="intern-title">
+<h3 data-i18n="157">Agentic AI Developer Intern</h3>
+<p class="intern-company">NEXLEVR</p>
+</div>
+<span class="intern-status"><span class="status-dot"></span><span data-i18n="158">Dec 1 – Dec 31, 2026 · Remote</span></span>
+</div>
+<p class="intern-summary" data-i18n="159">Remote, self-paced and task-based internship as an Agentic AI Developer Intern at NEXLEVR. Completed three hands-on tasks on tool-using AI agents, workflow automation and system design with Python and Google Gemini.</p>
+<div class="task-grid reveal-stagger">
+<article class="task-card">
+<span class="task-num" data-i18n="160">Task 1</span>
+<h4 data-i18n="161">Tool-Using AI Agent</h4>
+<p data-i18n="162">A Python script where Gemini calls a function to look up product prices, with a step-by-step explanation of the tool-use loop.</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/function.svg" width="16"/>Function Calling</span></div>
+<div class="task-links">
+<a data-i18n="163" href="https://github.com/hisrak/first-tool-using-ai" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a>
+</div>
+</article>
+<article class="task-card">
+<span class="task-num" data-i18n="164">Task 2</span>
+<h4 data-i18n="165">Daily Trends Digest Agent</h4>
+<p data-i18n="166">An agent that reads 5 RSS feeds and uses Gemini to write a daily 5-bullet digest with post ideas and real source links.</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/rss.svg" width="16"/>RSS Feeds</span></div>
+<div class="task-links">
+<a data-i18n="167" href="https://github.com/hisrak/daily-trends-digest-agent" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a>
+</div>
+</article>
+<article class="task-card">
+<span class="task-num" data-i18n="168">Task 3</span>
+<h4 data-i18n="169">Workflows vs Agents Design Doc</h4>
+<p data-i18n="170">A 3-page design doc comparing fixed workflows and AI agents, with three business examples and a clear recommendation for each.</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/pdf.svg" width="16"/>Design Doc</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/function.svg" width="16"/>AI Agents</span></div>
+<div class="task-links">
+<a data-i18n="171" href="https://github.com/hisrak/workflows-vs-agents-design-doc" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a>
+<a data-i18n="172" href="https://github.com/hisrak/workflows-vs-agents-design-doc/blob/main/Workflows-vs-Agents-Design-Doc.pdf" rel="noopener noreferrer" target="_blank">Read the PDF ↗</a>
+</div>
+</article>
+</div>
+</div>
+<div class="intern-card oasis reveal">
+<div class="intern-head">
+<div class="intern-logo has-img oasis"><img alt="Oasis Infobyte logo" height="200" loading="lazy" src="images/oasis-logo.png" width="200"/></div>
+<div class="intern-title">
+<h3 data-i18n="230">Web Development &amp; Designing Intern</h3>
+<p class="intern-company">OASIS INFOBYTE · OIBSIP</p>
+</div>
+<span class="intern-status"><span class="status-dot"></span><span data-i18n="231">Nov 2026 · 1 month</span></span>
+</div>
+<p class="intern-summary" data-i18n="232">One-month internship in Web Development &amp; Designing with Oasis Infobyte. Completed Level 1 (all 3 tasks), building a landing page, a personal portfolio and a temperature converter with HTML5, CSS3 and JavaScript.</p>
+<div class="task-grid reveal-stagger">
+<article class="task-card">
+<span class="task-num" data-i18n="233">Task 1</span>
+<h4 data-i18n="234">NovaFit Landing Page</h4>
+<p data-i18n="235">A responsive, animated landing page for a fictional fitness app, built with HTML5 and CSS3 only (no JavaScript).</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span></div>
+<div class="task-links"><a data-i18n="266" href="https://oibsip-landing-page-phi.vercel.app/" rel="noopener noreferrer" target="_blank">Live Demo ↗</a><a data-i18n="236" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-LandingPage" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a></div>
+</article>
+<article class="task-card">
+<span class="task-num" data-i18n="237">Task 2</span>
+<h4 data-i18n="238">Personal Portfolio</h4>
+<p data-i18n="239">This portfolio website: skills, projects, internship experience, dark/light theme and English/Urdu.</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span></div>
+<div class="task-links"><a data-i18n="240" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-PersonalPortfolio" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a></div>
+</article>
+<article class="task-card">
+<span class="task-num" data-i18n="241">Task 3</span>
+<h4 data-i18n="242">ThermoLab Temperature Converter</h4>
+<p data-i18n="243">Converts Celsius, Fahrenheit and Kelvin with live validation, absolute-zero protection and an animated thermometer.</p>
+<div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span></div>
+<div class="task-links"><a data-i18n="267" href="https://oibsiptemperatureconverter.vercel.app/" rel="noopener noreferrer" target="_blank">Live Demo ↗</a><a data-i18n="244" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-TemperatureConverter" rel="noopener noreferrer" target="_blank">View on GitHub ↗</a></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- SKILLS -->
+<section id="skills">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="section-eyebrow" data-i18n="58">04 — Stack</span>
+<h2 data-i18n="59">Skills &amp; Technologies</h2>
+<p data-i18n="60">
+            Tools and technologies I use to build full-stack applications.
+          </p>
+</div>
+<div class="skills-grid reveal-stagger"><div class="skill-card"><span class="skill-num">01</span><span class="skill-tag mono">LANG</span>
+<h3 data-i18n="173">Languages</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/csharp.svg" width="16"/>C#</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/php.svg" width="16"/>PHP</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dart.svg" width="16"/>Dart</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/sql.svg" width="16"/>SQL</span></div></div><div class="skill-card"><span class="skill-num">02</span><span class="skill-tag mono">UI</span>
+<h3 data-i18n="174">Frontend</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/react.svg" width="16"/>React.js</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/materialui.svg" width="16"/>Material UI</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap 5</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/tailwindcss.svg" width="16"/>Tailwind CSS</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/vite.svg" width="16"/>Vite</span></div></div><div class="skill-card"><span class="skill-num">03</span><span class="skill-tag mono">API</span>
+<h3 data-i18n="175">Backend</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>ASP.NET Core MVC</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/nodejs.svg" width="16"/>Node.js</span><span class="chip"><img alt="" class="ico mono" decoding="async" height="16" loading="lazy" src="icons/express.svg" width="16"/>Express.js</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>EF Core</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/api.svg" width="16"/>REST APIs</span></div></div><div class="skill-card"><span class="skill-num">04</span><span class="skill-tag mono">DB</span>
+<h3 data-i18n="176">Databases</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mssql.svg" width="16"/>SQL Server</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mysql.svg" width="16"/>MySQL</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mongodb.svg" width="16"/>MongoDB</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/firebase.svg" width="16"/>Firebase</span></div></div><div class="skill-card"><span class="skill-num">05</span><span class="skill-tag mono">APP</span>
+<h3 data-i18n="177">Mobile</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Flutter</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dart.svg" width="16"/>Dart</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Provider</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/firebase.svg" width="16"/>Firebase Auth</span></div></div><div class="skill-card"><span class="skill-num">06</span><span class="skill-tag mono">AI</span>
+<h3 data-i18n="178">AI &amp; Automation</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/function.svg" width="16"/>Function Calling</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/rss.svg" width="16"/>RSS Feeds</span></div></div><div class="skill-card"><span class="skill-num">07</span><span class="skill-tag mono">DEV</span>
+<h3 data-i18n="179">Developer Tools</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/git.svg" width="16"/>Git</span><span class="chip"><img alt="" class="ico mono" decoding="async" height="16" loading="lazy" src="icons/github.svg" width="16"/>GitHub</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/visualstudio.svg" width="16"/>Visual Studio</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/vscode.svg" width="16"/>VS Code</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/xampp.svg" width="16"/>XAMPP</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mssql.svg" width="16"/>SSMS</span></div></div><div class="skill-card"><span class="skill-num">08</span><span class="skill-tag mono">VIZ</span>
+<h3 data-i18n="180">Data &amp; Reporting</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/chartjs.svg" width="16"/>Chart.js</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/leaflet.svg" width="16"/>Leaflet Maps</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/qr.svg" width="16"/>QR Certification</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/pdf.svg" width="16"/>PDF Generation</span></div></div><div class="skill-card"><span class="skill-num">09</span><span class="skill-tag mono">ARCH</span>
+<h3 data-i18n="181">Concepts &amp; Practices</h3><div class="chip-row"><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/shield.svg" width="16"/>Role-Based Auth</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/key.svg" width="16"/>JWT Authentication</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/db.svg" width="16"/>Relational Modeling</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/responsive.svg" width="16"/>Responsive Design</span><span class="chip"><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dashboard.svg" width="16"/>Admin Dashboards</span></div></div></div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section id="work">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="section-eyebrow" data-i18n="67">05 — Projects</span>
+<h2 data-i18n="68">Featured Projects</h2>
+<p data-i18n="69">
+            A selection of projects built, debugged, and documented end to end.
+          </p>
+</div>
+<div class="filter-row reveal">
+<button class="filter-btn active" data-filter="all" data-i18n="70" type="button">
+            All Projects
+          </button>
+<button class="filter-btn" data-filter="fullstack" data-i18n="71" type="button">
+            Full-Stack &amp; Backend
+          </button>
+<button class="filter-btn" data-filter="frontend" data-i18n="72" type="button">
+            Frontend &amp; UI
+          </button>
+<button class="filter-btn" data-filter="mobile" data-i18n="73" type="button">
+            Mobile
+          </button><button class="filter-btn" data-filter="ai" data-i18n="182" type="button">AI &amp; Automation</button>
+</div>
+<div class="project-grid reveal-stagger">
+<!-- CurrenSee -->
+<article class="card" data-category="mobile">
+<a aria-label="Open CurrenSee repository" class="card-media" data-i18n-aria="216" href="https://github.com/hisrak/CurrenSee" rel="noopener noreferrer" target="_blank"><img alt="CurrenSee app screenshot" class="pos-left" data-i18n-alt="222" height="469" loading="lazy" src="images/currensee.jpg" width="1000"/><span class="media-chip" data-i18n="183">View Project ↗</span></a>
+<div class="card-header">
+<h3>CurrenSee</h3>
+<span class="card-tag mobile" data-i18n="74">Mobile</span>
+</div>
+<p class="desc" data-i18n="75">
+              A cross-platform fintech app featuring currency exchange rates,
+              Firebase authentication, and a dark-theme interface.
+            </p>
+<div class="stack">
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Flutter</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dart.svg" width="16"/>Dart</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/firebase.svg" width="16"/>Firebase</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/flutter.svg" width="16"/>Provider</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/api.svg" width="16"/>Frankfurter API</span>
+</div>
+<div class="card-links">
+<a data-i18n="76" href="https://github.com/hisrak/CurrenSee" rel="noopener noreferrer" target="_blank">
+                View Source Code ↗
+              </a>
+</div>
+</article>
+<!-- Testing System -->
+<article class="card" data-category="fullstack">
+<a aria-label="Open Testing System repository" class="card-media" data-i18n-aria="139" href="https://github.com/hisrak/Testing_System" rel="noopener noreferrer" target="_blank">
+<img alt="Testing System screenshot" data-i18n-alt="145" height="600" loading="lazy" src="images/testing-system.jpg" width="1000"/>
+<span class="media-chip" data-i18n="77">View Project ↗</span>
+</a>
+<div class="card-header">
+<h3>Testing System</h3>
+<span class="card-tag fullstack" data-i18n="78">Full-Stack</span>
+</div>
+<p class="desc" data-i18n="79">
+              An electrical laboratory management system with Admin and
+              Technician roles, testing reports, QR-code certification,
+              and printable PDF certificates.
+            </p>
+<div class="stack">
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/php.svg" width="16"/>PHP</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mysql.svg" width="16"/>MySQL</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap 5</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/chartjs.svg" width="16"/>Chart.js</span>
+</div>
+<div class="card-links">
+<a data-i18n="80" href="https://github.com/hisrak/Testing_System" rel="noopener noreferrer" target="_blank">
+                View Source Code ↗
+              </a>
+</div>
+</article>
+<!-- Thunder Peak Adventure Park -->
+<article class="card" data-category="fullstack">
+<a aria-label="Open Thunder Peak Adventure Park repository" class="card-media" data-i18n-aria="140" href="https://github.com/hisrak/thunder-peak-adventure-park" rel="noopener noreferrer" target="_blank">
+<img alt="Thunder Peak Adventure Park screenshot" data-i18n-alt="146" height="600" loading="lazy" src="images/thunder-peak.jpg" width="1000"/>
+<span class="media-chip" data-i18n="81">View Project ↗</span>
+</a>
+<div class="card-header">
+<h3>Thunder Peak Adventure Park</h3>
+<span class="card-tag fullstack" data-i18n="82">Full-Stack</span>
+</div>
+<p class="desc" data-i18n="83">
+              A theme park booking platform with customer registration,
+              a session-based cart, digital tickets, QR verification,
+              and an admin dashboard.
+            </p>
+<div class="stack">
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/php.svg" width="16"/>PHP</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mysql.svg" width="16"/>MySQL</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/chartjs.svg" width="16"/>Chart.js</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span>
+</div>
+<div class="card-links">
+<a data-i18n="84" href="https://github.com/hisrak/thunder-peak-adventure-park" rel="noopener noreferrer" target="_blank">
+                View Source Code ↗
+              </a>
+</div>
+</article>
+<!-- Stylist Store -->
+<article class="card" data-category="frontend">
+<a aria-label="Open Stylist Store repository" class="card-media" data-i18n-aria="141" href="https://github.com/hisrak/Stylist-Store" rel="noopener noreferrer" target="_blank">
+<img alt="Stylist Store screenshot" data-i18n-alt="147" height="600" loading="lazy" src="images/stylist-store.jpg" width="1000"/>
+<span class="media-chip" data-i18n="85">View Project ↗</span>
+</a>
+<div class="card-header">
+<h3>Stylist Store</h3>
+<span class="card-tag frontend" data-i18n="86">Frontend</span>
+</div>
+<p class="desc" data-i18n="87">
+              A responsive fashion e-commerce frontend with product
+              browsing, shopping cart interactions, and a mobile-friendly
+              layout.
+            </p>
+<div class="stack">
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap</span>
+<span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span>
+</div>
+<div class="card-links">
+<a data-i18n="88" href="https://github.com/hisrak/Stylist-Store" rel="noopener noreferrer" target="_blank">
+                View Source Code ↗
+              </a>
+</div>
+</article>
+<!-- Food Saver -->
+<article class="card" data-category="frontend">
+<a aria-label="Visit Food Saver live website" class="card-media" data-i18n-aria="217" href="https://food-saverrr.vercel.app/" rel="noopener noreferrer" target="_blank">
+<img alt="Food Saver screenshot" data-i18n-alt="223" height="553" loading="lazy" src="images/food-saver.jpg" width="1000"/>
+<span class="media-chip" data-i18n="184">View Live Website ↗</span>
+</a>
+<div class="card-header"><h3>Food Saver</h3><span class="card-tag frontend" data-i18n="185">Frontend</span></div>
+<p class="desc" data-i18n="186">A responsive food-saving website designed to raise awareness about food waste and encourage responsible food sharing. Includes informational pages, login, registration, and contact.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/bootstrap.svg" width="16"/>Bootstrap 5</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span></div>
+<div class="card-links">
+<a data-i18n="187" href="https://food-saverrr.vercel.app/" rel="noopener noreferrer" target="_blank">Live Website ↗</a>
+<a data-i18n="188" href="https://github.com/hisrak/Food-Saver" rel="noopener noreferrer" target="_blank">GitHub Source Code ↗</a>
+</div>
+</article>
+<!-- CineMarquee -->
+<!-- Career Guidance -->
+<article class="card" data-category="fullstack">
+<a aria-label="Open Career Guidance repository" class="card-media" data-i18n-aria="276" href="https://github.com/hisrak/Career-Guidance" rel="noopener noreferrer" target="_blank"><img alt="Career Guidance platform screenshot" class="pos-left" data-i18n-alt="279" height="460" loading="lazy" src="images/career-guidance.jpg" width="1000"/><span class="media-chip" data-i18n="268">View Project ↗</span></a>
+<div class="card-header">
+<h3>Career Guidance Platform</h3>
+<span class="card-tag fullstack" data-i18n="96">Full-Stack</span>
+</div>
+<p class="desc" data-i18n="97">
+              A multi-role Student / Mentor / Admin platform with role-based login and redirects,
+              SQL Server via EF Core, an admin dashboard and redesigned student views. Built with a teammate.
+            </p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>ASP.NET Core MVC</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/csharp.svg" width="16"/>C#</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mssql.svg" width="16"/>SQL Server</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/dotnet.svg" width="16"/>Razor</span></div>
+<div class="card-links"><a data-i18n="269" href="https://github.com/hisrak/Career-Guidance" rel="noopener noreferrer" target="_blank">View Source Code ↗</a></div>
+</article>
+<!-- GitHub CTA -->
+<article class="card" data-category="fullstack">
+<a aria-label="Open Crime Portal repository" class="card-media" data-i18n-aria="218" href="https://github.com/hisrak/Crime-Portal" rel="noopener noreferrer" target="_blank">
+<img alt="Crime Portal screenshot" data-i18n-alt="224" height="625" loading="lazy" src="images/crime-portal.jpg" width="1000"/>
+<span class="media-chip" data-i18n="189">View Project ↗</span>
+</a>
+<div class="card-header"><h3>Crime Portal</h3><span class="card-tag fullstack" data-i18n="190">Full-Stack</span></div>
+<p class="desc" data-i18n="191">A full-stack MERN crime-monitoring portal for Karachi where citizens can report and track complaints, verify reports through community confirmations, view crime statistics, and check area safety on a live map.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/react.svg" width="16"/>React</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/vite.svg" width="16"/>Vite</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/nodejs.svg" width="16"/>Node.js</span><span><img alt="" class="ico mono" decoding="async" height="16" loading="lazy" src="icons/express.svg" width="16"/>Express</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/mongodb.svg" width="16"/>MongoDB</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/tailwindcss.svg" width="16"/>Tailwind CSS</span></div>
+<div class="card-links">
+<a data-i18n="192" href="https://github.com/hisrak/Crime-Portal" rel="noopener noreferrer" target="_blank">View Source Code ↗</a>
+</div>
+</article>
+<article class="card" data-category="ai">
+<a aria-label="Open Daily Trends Digest Agent repository" class="card-media" data-i18n-aria="219" href="https://github.com/hisrak/daily-trends-digest-agent" rel="noopener noreferrer" target="_blank">
+<img alt="Daily Trends Digest Agent screenshot" data-i18n-alt="225" height="738" loading="lazy" src="images/daily-trends.jpg" width="1000"/>
+<span class="media-badge"><span data-i18n="193">NEXLEVR Internship</span> · <span data-i18n="194">Task 2</span></span>
+<span class="media-chip" data-i18n="195">View Project ↗</span>
+</a>
+<div class="card-header"><h3>Daily Trends Digest Agent</h3><span class="card-tag ai" data-i18n="196">AI Agent</span></div>
+<p class="desc" data-i18n="197">A Python agent that reads 5 RSS feeds and uses Google Gemini to pick the 5 most useful stories and write a daily digest with summaries, post ideas and real source links.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/rss.svg" width="16"/>RSS Feeds</span></div>
+<div class="card-links">
+<a data-i18n="198" href="https://github.com/hisrak/daily-trends-digest-agent" rel="noopener noreferrer" target="_blank">View Source Code ↗</a>
+</div>
+</article>
+<article class="card" data-category="ai">
+<a aria-label="Open First Tool-Using AI repository" class="card-media" data-i18n-aria="220" href="https://github.com/hisrak/first-tool-using-ai" rel="noopener noreferrer" target="_blank">
+<img alt="First Tool-Using AI screenshot" data-i18n-alt="226" height="811" loading="lazy" src="images/first-tool-ai.jpg" width="1000"/>
+<span class="media-badge"><span data-i18n="199">NEXLEVR Internship</span> · <span data-i18n="200">Task 1</span></span>
+<span class="media-chip" data-i18n="201">View Project ↗</span>
+</a>
+<div class="card-header"><h3>First Tool-Using AI</h3><span class="card-tag ai" data-i18n="202">AI Agent</span></div>
+<p class="desc" data-i18n="203">A Python script where Gemini calls a function to look up product prices, with a step-by-step explanation of the tool-use (function calling) loop.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/python.svg" width="16"/>Python</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/gemini.svg" width="16"/>Gemini API</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/function.svg" width="16"/>Function Calling</span></div>
+<div class="card-links">
+<a data-i18n="204" href="https://github.com/hisrak/first-tool-using-ai" rel="noopener noreferrer" target="_blank">View Source Code ↗</a>
+</div>
+</article>
+<article class="card" data-category="ai">
+<a aria-label="Open Workflows vs Agents Design Doc repository" class="card-media" data-i18n-aria="221" href="https://github.com/hisrak/workflows-vs-agents-design-doc" rel="noopener noreferrer" target="_blank">
+<img alt="Workflows vs Agents Design Doc screenshot" data-i18n-alt="227" height="936" loading="lazy" src="images/workflows-doc.jpg" width="1000"/>
+<span class="media-badge"><span data-i18n="205">NEXLEVR Internship</span> · <span data-i18n="206">Task 3</span></span>
+<span class="media-chip" data-i18n="207">View Project ↗</span>
+</a>
+<div class="card-header"><h3>Workflows vs Agents Design Doc</h3><span class="card-tag ai" data-i18n="208">Design Doc</span></div>
+<p class="desc" data-i18n="209">A 3-page design doc comparing fixed workflows and AI agents, with three business examples and a clear recommendation for each.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/pdf.svg" width="16"/>Design Doc</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/function.svg" width="16"/>AI Agents</span></div>
+<div class="card-links">
+<a data-i18n="210" href="https://github.com/hisrak/workflows-vs-agents-design-doc" rel="noopener noreferrer" target="_blank">View Source Code ↗</a>
+<a data-i18n="211" href="https://github.com/hisrak/workflows-vs-agents-design-doc/blob/main/Workflows-vs-Agents-Design-Doc.pdf" rel="noopener noreferrer" target="_blank">Read the PDF ↗</a>
+</div>
+</article>
+<article class="card" data-category="frontend">
+<a aria-label="Visit NovaFit Landing Page live website" class="card-media" data-i18n-aria="277" href="https://oibsip-landing-page-phi.vercel.app/" rel="noopener noreferrer" target="_blank">
+<img alt="NovaFit Landing Page screenshot" data-i18n-alt="263" height="529" loading="lazy" src="images/novafit.jpg" width="880"/>
+<span class="media-badge oasis">Oasis Infobyte · <span data-i18n="245">Task 1</span></span>
+<span class="media-chip" data-i18n="270">View Live Website ↗</span>
+</a>
+<div class="card-header"><h3>NovaFit Landing Page</h3><span class="card-tag frontend" data-i18n="247">Frontend</span></div>
+<p class="desc" data-i18n="248">A responsive, animated landing page for a fictional fitness app, built with HTML5 and CSS3 only: no JavaScript.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span></div>
+<div class="card-links"><a data-i18n="271" href="https://oibsip-landing-page-phi.vercel.app/" rel="noopener noreferrer" target="_blank">Live Website ↗</a><a data-i18n="272" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-LandingPage" rel="noopener noreferrer" target="_blank">GitHub Source Code ↗</a></div>
+</article>
+<article class="card" data-category="frontend">
+<a aria-label="Open Personal Portfolio on GitHub" class="card-media" data-i18n-aria="261" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-PersonalPortfolio" rel="noopener noreferrer" target="_blank">
+<img alt="Personal Portfolio screenshot" data-i18n-alt="264" height="865" loading="lazy" src="images/oasis-portfolio.jpg" width="859"/>
+<span class="media-badge oasis">Oasis Infobyte · <span data-i18n="250">Task 2</span></span>
+<span class="media-chip" data-i18n="251">View Project ↗</span>
+</a>
+<div class="card-header"><h3>Personal Portfolio</h3><span class="card-tag frontend" data-i18n="252">Frontend</span></div>
+<p class="desc" data-i18n="253">My portfolio website with skills, projects, internship experience, a dark/light theme and an English/Urdu switch.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span></div>
+<div class="card-links"><a data-i18n="254" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-PersonalPortfolio" rel="noopener noreferrer" target="_blank">View Source Code ↗</a></div>
+</article>
+<article class="card" data-category="frontend">
+<a aria-label="Visit ThermoLab Temperature Converter live website" class="card-media" data-i18n-aria="278" href="https://oibsiptemperatureconverter.vercel.app/" rel="noopener noreferrer" target="_blank">
+<img alt="ThermoLab Temperature Converter screenshot" data-i18n-alt="265" height="795" loading="lazy" src="images/thermolab.jpg" width="847"/>
+<span class="media-badge oasis">Oasis Infobyte · <span data-i18n="255">Task 3</span></span>
+<span class="media-chip" data-i18n="273">View Live Website ↗</span>
+</a>
+<div class="card-header"><h3>ThermoLab Temperature Converter</h3><span class="card-tag frontend" data-i18n="257">Frontend</span></div>
+<p class="desc" data-i18n="258">Converts Celsius, Fahrenheit and Kelvin with live validation, absolute-zero protection and an animated thermometer.</p>
+<div class="stack"><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/html5.svg" width="16"/>HTML5</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/css3.svg" width="16"/>CSS3</span><span><img alt="" class="ico" decoding="async" height="16" loading="lazy" src="icons/javascript.svg" width="16"/>JavaScript</span></div>
+<div class="card-links"><a data-i18n="274" href="https://oibsiptemperatureconverter.vercel.app/" rel="noopener noreferrer" target="_blank">Live Website ↗</a><a data-i18n="275" href="https://github.com/hisrak/OIBSIP/tree/main/WebDev-L1-TemperatureConverter" rel="noopener noreferrer" target="_blank">GitHub Source Code ↗</a></div>
+</article><a class="card cta-card" href="https://github.com/hisrak/" rel="noopener noreferrer" target="_blank">
+<span class="cta-kicker" data-i18n="99">More on GitHub</span>
+<h3 data-i18n="100">See all repositories</h3>
+<p class="desc" data-i18n="101">Source code, READMEs and work in progress — github.com/hisrak</p>
+<span class="cta-arrow">↗</span>
+</a>
+</div>
+<p class="more-note reveal" data-i18n="102">
+          More projects are in progress and will be added to GitHub soon.
+        </p>
+</div>
+</section>
+<!-- SERVICES -->
+<section id="services">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="section-eyebrow" data-i18n="103">06 — Client Services</span>
+<h2 data-i18n="104">Freelance &amp; Contracting</h2>
+<p data-i18n="105">Custom web development solutions built around project requirements.</p>
+</div>
+<div class="services-grid reveal-stagger">
+<div class="service-card">
+<span class="service-num">01</span>
+<h3 data-i18n="106">Responsive Websites</h3>
+<p data-i18n="107">
+              Mobile-friendly websites and landing pages designed for
+              clarity, usability, and responsive layouts.
+            </p>
+</div>
+<div class="service-card">
+<span class="service-num">02</span>
+<h3 data-i18n="108">Web Applications</h3>
+<p data-i18n="109">
+              Web applications with authentication, user roles,
+              dashboards, and business workflows.
+            </p>
+</div>
+<div class="service-card">
+<span class="service-num">03</span>
+<h3 data-i18n="110">Database Design</h3>
+<p data-i18n="111">
+              Relational database schemas, SQL queries, and ORM integrations.
+            </p>
+</div>
+<div class="service-card">
+<span class="service-num">04</span>
+<h3 data-i18n="112">UI Modernization</h3>
+<p data-i18n="113">
+              Updating existing layouts with modern styling and
+              responsive Bootstrap or React components.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- START A PROJECT -->
+<section id="start-project">
+<div class="wrap">
+<div class="project-form-wrap reveal">
+<div class="form-intro">
+<span class="section-eyebrow" data-i18n="114">07 — Start a Project</span>
+<h2 data-i18n="115">Have a project in mind?</h2>
+<p data-i18n="116">
+              Share your requirements and prepare an email to discuss
+              your project.
+            </p>
+</div>
+<form class="project-form" id="projectForm">
+<div class="form-row">
+<label data-i18n="117" for="fName">Your Name</label>
+<input autocomplete="name" data-i18n-ph="136" id="fName" name="fName" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="form-row">
+<label data-i18n="118" for="fEmail">Email Address</label>
+<input autocomplete="email" data-i18n-ph="137" id="fEmail" name="fEmail" placeholder="you@example.com" required="" type="email"/>
+</div>
+<div class="form-row">
+<label data-i18n="119" for="fService">Service Required</label>
+<select id="fService" name="fService">
+<option data-i18n="120" value="Full-Stack Web Application">Full-Stack Web Application</option>
+<option data-i18n="121" value="Responsive Website">Responsive Website</option>
+<option data-i18n="122" value="Database Design">Database Design</option>
+<option data-i18n="123" value="UI Modernization">UI Modernization</option>
+<option data-i18n="124" value="Mobile App (Flutter)">Mobile App (Flutter)</option>
+<option data-i18n="125" value="Other">Other</option>
+</select>
+</div>
+<div class="form-row">
+<label data-i18n="126" for="fOverview">Project Overview</label>
+<textarea data-i18n-ph="138" id="fOverview" name="fOverview" placeholder="Describe your project..." required="" rows="4"></textarea>
+</div>
+<button class="btn-primary form-submit" data-i18n="127" type="submit">
+              Prepare Email <span class="arrow">→</span>
+</button>
+<p aria-live="polite" class="form-note" id="formNote"></p>
+</form>
+</div>
+</div>
+</section>
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+<div class="wrap">
+<div class="footer-inner reveal">
+<div>
+<span class="section-eyebrow" data-i18n="128">08 — Contact</span>
+<h2 data-i18n="129">Let's build something reliable together.</h2>
+<p class="footer-lead" data-i18n="130">
+              Open to internships and freelance web and app development work.
+            </p>
+</div>
+<div class="contact-links">
+<a class="contact-item ci-mail" href="mailto:hisrawaheed@gmail.com"><span class="ci-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span class="ci-body"><span class="ci-label" data-i18n="212">Email</span><span class="ci-value">hisrawaheed@gmail.com</span></span></a>
+<a class="contact-item ci-phone" href="tel:+923052524274"><span class="ci-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><span class="ci-body"><span class="ci-label" data-i18n="213">Phone</span><span class="ci-value">+92 305 2524274</span></span></a>
+<a class="contact-item ci-linkedin" href="https://www.linkedin.com/in/hisra-khan-25355a424/" rel="noopener noreferrer" target="_blank"><span class="ci-icon"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></span><span class="ci-body"><span class="ci-label">LinkedIn</span><span class="ci-value">linkedin.com/in/hisra-khan</span></span></a>
+<a class="contact-item ci-github" href="https://github.com/hisrak/" rel="noopener noreferrer" target="_blank"><span class="ci-icon"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></span><span class="ci-body"><span class="ci-label">GitHub</span><span class="ci-value">github.com/hisrak</span></span></a>
+<a class="contact-item ci-cv" download="" href="Hisra_Khan_CV.pdf"><span class="ci-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path><path d="M12 15V3"></path></svg></span><span class="ci-body"><span class="ci-label" data-i18n="214">Resume</span><span class="ci-value" data-i18n="215">Download CV (PDF)</span></span></a>
+</div>
+</div>
+<div aria-hidden="true" class="footer-signature reveal">
+          Hisra Khan
+        </div>
+<div class="footer-bottom">
+<span data-i18n="134">© 2026 Hisra Khan. All rights reserved.</span>
+<span data-i18n="135">Karachi, Pakistan</span>
+</div>
+</div>
+</footer>
+</main>
+<button aria-label="Back to top" class="to-top" data-i18n-aria="143" id="toTop" type="button">↑</button>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
